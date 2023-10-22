@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FoodsComponent } from './components/foods/foods.component';
@@ -12,7 +13,10 @@ import { CreateorderComponent } from './components/createorder/createorder.compo
 import { CatogariesComponent } from './components/catogaries/catogaries.component';
 import { RestorentItemsComponent } from './components/restorent-items/restorent-items.component';
 import { SelectedFoodComponent } from './components/selected-food/selected-food.component';
-
+import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button';
+import { TooltipModule } from 'primeng/tooltip';
+import { MessagesModule } from 'primeng/messages';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +32,13 @@ import { SelectedFoodComponent } from './components/selected-food/selected-food.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ToastModule,
+    ButtonModule,
+    TooltipModule,
+    MessagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

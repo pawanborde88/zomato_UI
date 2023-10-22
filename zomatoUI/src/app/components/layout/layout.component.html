@@ -1,1 +1,52 @@
-<p>layout works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+  <div class="container">
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img src="https://b.zmtcdn.com/images/zomato_white_logo_new.svg" height="20" alt="MDB Logo" loading="lazy"
+        style="margin-top: -1px;" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" *ngIf="!loggedDat?.userName" routerLink="Login">Login </a>
+        <a class="navbar-brand">Add Restorent </a>
+        <a class="navbar-brand">Sign Up </a>
+        <a class="navbar-brand" *ngIf="loggedDat?.userName">{{loggedDat?.userName}} </a>
+        <a class="navbar-brand btn btn-outline-success" (click)="logoff()" *ngIf="loggedDat?.userName">LogOff </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div height="57rem" width="100%" class="sc-s1isp7-1 cTkoD banner-img">
+  <div src="" class="sc-s1isp7-3 cVOEqG"></div><img alt="Country Image"
+    src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" loading="lazy"
+    class="sc-s1isp7-5 fyZwWD">
+</div>
+<div class="contents-wrapper">
+  <div height="6rem" width="100%" class="sc-s1isp7-1 fyatdv logo">
+    <div src="" class="sc-s1isp7-3 cVOEqG"></div><img alt="Zomato logo"
+      src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" loading="lazy"
+      class="sc-s1isp7-5 jQwYOW">
+  </div>
+  <h1 class="sc-7kepeu-0 kYnyFA description">Find the best restaurants, cafés and bars in <!-- -->India</h1>
+</div>
+<div class="heading">
+  <h2 class="sc-dln2kl-0 cHkolX">Popular locations in </h2>
+  <div class="flag-title">
+    <div height="3.5rem" width="7rem" class="sc-s1isp7-1 eKgLuZ flag-logo">
+      <div src="" class="sc-s1isp7-3 cVOEqG"></div><img alt="India flag"
+        src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 jQwYOW">
+    </div>
+    <h2 class="sc-dln2kl-0 cHkolX country">India</h2>
+  </div>
+</div>
+<div class="country-description">
+  <p>From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food, Zomato covers it all.
+    Explore menus, and millions of restaurant photos and reviews from users just like you, to find your next great meal.
+  </p>
+</div>
+<hr class="sc-elhb8j-13 bskCAo">
+<footer class="bg-light text-center text-lg-start">
+  <p class="sc-elhb8j-5 kBllqA">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+  <!-- Copyright -->
+</footer>

@@ -1,0 +1,93 @@
+.header__navigation__container {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+  font-size: 15px;
+}
+.header__navigation__link {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+a, a:hover {
+  text-decoration: none;
+}
+.header__navigation__link img {
+  height: 28px;
+}
+img {
+  border: 0;
+}
+.ui.sticky {
+  position: static;
+  transition: none;
+  z-index: 800;
+}
+div {
+  display: block;
+}
+.header__navigation__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+  height: 38px;
+}
+.left {
+  float: left;
+}
+
+.h100 {
+  height: 100%;
+}
+*, :after, :before {
+  box-sizing: inherit;
+}
+a {
+  color: #33373d;
+}
+a {
+  background: transparent;
+}
+.right {
+  float: right;
+}
+.h100 {
+  height: 100%;
+}
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+div {
+  display: block;
+}
+#sticky_header.v2 .header {
+  box-sizing: border-box;
+  width: 100%;
+  transition: top .3s;
+  z-index: 1000;
+}
+.ui.sticky {
+    position: static;
+    transition: none;
+    z-index: 800;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
